@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "app_function": "run.app",
+    "aws_region": "us-east-1",
+    "remote_env": "s3://decipherapi-dev-config/ffml-preprocess-env-dev.json",
+    "project_name": "ffml-preprocess",
+    "runtime": "python3.11",
+    "api_key_required": true,
+    "apigateway_enabled": true,
+    "apigateway_description": "FFML preprocess API Gateway for Dev environment"
+  },
+
+  "main": {
+    "app_function": "run.app",
+    "aws_region": "us-east-1",
+    "remote_env": "s3://decipherapi-prod-config/ffml-preprocess-env-prod.json",
+    "project_name": "ffml-preprocess",
+    "runtime": "python3.11",
+    "api_key_required": true,
+    "apigateway_enabled": true,
+    "apigateway_description": "FFML preprocess API Gateway for Prod environment"
+  }
+}
